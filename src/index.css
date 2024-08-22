@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+
+:root{
+    --main-color:hsl(346, 90%, 65%);
+    --light-color:#f0f3f2;
+    --shadow:rgba(145,158,171,.2) 0px 2px 4px -1px rgba(145,158,171,.14) 0px 4px 5px -1px;
+    --font-fmily:'Encode Sans Expanded',sans-serif;
+    --rating-color:#ffc908;
+  }
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+    text-decoration: none; /* Optional: remove underline from link */
+    color: inherit; /* Ensure text color is controlled by span */
+}
+
+.navbar-brand img {
+    width: 40px; /* Ensure width is correct */
+    height: 40px; /* Ensure height is correct for a circular shape */
+    border-radius: 50%; /* Make the logo circular */
+    margin-bottom: 5px; /* Space between logo and text */
+}
+
+.navbar-brand span {
+    color: var(--main-color);
+    font-size: 1rem; /* Adjust text size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    font-family: 'Indie Flower', cursive; /* Replace with the font you included */
+}
+body{
+    font-family: var(--font-family) !important;
+}
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black;
+    text-decoration: none;
+}
+ .productss:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+
+.border-text{
+    border: solid 1px var(--main-color) ;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.productss .btnAdd{
+    transform: translateY(200%);
+    transition: .7s all;
+    
+}
+
+.productss:hover .btnAdd{
+    transform: translateY(0);
+    transition: .7s all;
+
+}
+.cated:hover {
+    transform:scale(1.1);
+    transition: 1s all;
+}
+
+
+
+@media screen and (max-width: 768px){
+body{
+        width: 100%;
+    }
+    nav{
+        text-align:  center !important;
+        padding-block: 10px;
+    }
+    .socialm li i{
+        display: none;
+    }
+    .categ{
+        display: none;
+    }
+}
+
